@@ -1,0 +1,59 @@
+body{
+  background: #000;
+  color: white;
+}
+.navbar{
+  background-color: black;
+  position: sticky;
+  overflow: hidden;
+  padding: 15px;
+}
+.navbar a.brand{
+  float: left;
+  margin-left: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar a.brand:hover{
+  color: rgba(252, 207, 54);
+}
+.navbar .rightLinks{
+  float: right;
+  margin: 0;
+}
+.navbar .rightLinks a{
+  padding: 25px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0px;
+  transition: all .1s ease-in;
+}
+.navbar .rightLinks a:hover{
+  color: rgba(252, 207, 54);
+  text-underline-offset: 12px;
+  text-decoration-color:rgba(252, 207, 54);
+}
+ .navbar .rightLinks a.active{
+  color: rgba(252, 207, 54);
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 2px;
+ }
+.route-container > * {
+  animation: fadeIn 0.9s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

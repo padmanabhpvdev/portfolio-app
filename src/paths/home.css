@@ -1,0 +1,299 @@
+.main{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+.left,.right{
+    flex: 1;
+    height: auto;
+}
+.left{
+    margin-left: 5%;
+    margin-top:5%;
+    display:inline-table;
+}.left h1{
+    font-size:3em;
+}
+.left h3 span{
+    color:rgba(252, 207, 54);
+}
+.avatar{
+    margin-top: 10%;
+    height: 100%;
+    transition: all .3s ease;
+}
+.avatar:hover{
+    filter: grayscale(.8);
+    transform: scale(1.03);
+}
+.button{
+    color: rgb(95, 95, 95);
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 14px 28px;
+    background:rgba(252, 207, 54);
+    background-position: 0%;
+    transition: all .2s ease-in-out;
+}
+.button:hover{
+    background: #3a5bc7;
+    color: white;
+    transform: translateY(-2px);
+}
+.textbox{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 280px;
+  height: 380px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border-radius: 16px;
+  padding: 0;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: all .3s ease;
+}
+
+.card-content {
+  padding: 25px 20px;
+  margin-top: -20px;
+  z-index: 1;
+  line-height: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.card-button{
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  background-color:rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-button:hover{
+  background-color:rgba(252, 207, 54);
+  color: black;
+}
+.card:hover{
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+}
+.card:hover img{
+  transform: scale(2.3);
+  filter: blur(3px) grayscale(1);
+}
+
+.skill-container{
+  width: 70%;
+  height: 300px;
+  margin: 30px auto;
+  text-align: center;
+  justify-content: space-around;
+  padding: 35px 15px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  height: 300px;
+  padding: 20px;
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+}
+
+.skillballs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 10px;
+  transition: transform .2s linear;
+}
+
+.bar {
+  width: 40px;
+  height: 0;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to top, #ffd620, #ff511c);
+  border-radius: 5px;
+}
+.skillballs:hover{
+  transform: scale(1.1);
+}
+
+.skillballs span {
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.aboutavatar{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.aboutavatar img{
+    width: 50%;
+    height: auto;
+    margin-top: 15%;
+    background: #3a5bc7;
+    clip-path: circle(40%);
+    transition: all .5s ease-in-out;
+}
+.aboutavatar img:hover{
+    transform: rotate(10deg);
+    background-color: yellow;
+}
+.main2 {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.right2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.grid {
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f5e342, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f5e342, #764ba2);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.social a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.social a:hover::before {
+  left: 100%;
+}
+
+.social a:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.social a:nth-child(1):hover { background: linear-gradient(135deg, #333, #555); } 
+.social a:nth-child(2):hover { background: linear-gradient(135deg, #e04132, #d14836); } 
+.social a:nth-child(3):hover { background: linear-gradient(135deg, #0077b5, #00669c); }
+.social a:nth-child(4):hover { background: linear-gradient(135deg, #e4405f, #c13584); }
+.social a:nth-child(5):hover { background: linear-gradient(135deg, #25d366, #128c7e); }
+.social a:nth-child(6):hover { background: linear-gradient(135deg, #1877f2, #166fe5); }
+.social a:nth-child(7):hover { background: linear-gradient(135deg, #1da1f2, #1a91da); }
+.social a:nth-child(8):hover { background: linear-gradient(135deg,#1d92f2, #84f21d, #f3331a); }
